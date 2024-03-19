@@ -1,11 +1,12 @@
 .btn
-	&:link, &:visited
+	&, &:link, &:visited
 		@include style-link($color-brown-dark)
 		padding: 1.5rem 4rem
 		background: $color-white
 		border-radius: 5rem
 		transition: all .3s
 		position: relative
+		border: none
 		// изменения 
 		font-size: 2rem
 		color: $color-gray
@@ -36,3 +37,12 @@
 	&_animated
 		animation: btnToUp 1s ease-out 2s
 		animation-fill-mode: backwards
+
+.btn_brown
+	&, &:link, &:visited
+		background: $color-brown-dark
+		color: $color-white
+	&:hover
+		
+	&::after
+		background: $color-brown-dark
