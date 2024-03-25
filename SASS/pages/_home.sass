@@ -1,6 +1,8 @@
 .section-about
 	padding-top: 8rem
-	padding-bottom: 10rem
+	margin-bottom: 10rem
+	@include respond(tab-land)
+		margin-bottom: 13rem
 
 .section-adventure
 	padding: 21rem 0
@@ -8,6 +10,8 @@
 	transform: skewY(5deg)
 	& > *
 		transform: skewY(-5deg)
+	@include respond(tab-land)
+		padding: 15rem 0
 
 .section-tour
 	padding-top: 21rem
