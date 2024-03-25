@@ -12,7 +12,9 @@
 			margin-right: 5rem
 		@include respond(tab-land)
 			&:not(:last-child)
-				margin-right: 1.6drem
+				margin-right: 1.6rem
+		@include respond(tab-port)
+			margin: 0 3rem 3rem
 	&__link
 		&:link, &:visited
 			color: $color-gray
