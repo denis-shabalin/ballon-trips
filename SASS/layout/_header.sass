@@ -3,6 +3,9 @@
 	height: 90vh
 	background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0%, rgba($color-black, 0.7) 100%), url(../img/background-header.jpeg) no-repeat center / cover
 	clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 92%)
+
+	@media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px)
+		background: linear-gradient(90deg, rgba($color-black, 0.7) 0.03%, rgba($color-white, 0.7) 99.94%), url(../img/background-header-big.jpeg) center / cover
 	&__logo
 		height: 7rem
 		width: 5.6rem
